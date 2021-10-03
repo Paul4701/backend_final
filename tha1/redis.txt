@@ -1,0 +1,60 @@
+SET key value
+
+GET key value
+
+ttl name---> kotokhon dhore thakbe jehutu expiration set kora hoy nai tai sob somoy thakbe r out put
+-1 hbe
+
+expiration set korle ttl e valu dekhabe;
+
+expire key 10   ---> this is how the expiration is set 
+
+
+setex name 10 pintu  ---> this is how we set the expiration while setting the key 
+
+exists key   ---> exists kore ki na
+
+flushall --> ak bare sob delete korle;
+
+
+-----------------------------------------------------------------------------------------------------------
+
+akhn jodi array store korte hy tbe there are two command
+lpush and rpush
+
+1. lpush key element
+lpush friend jhon
+
+2. get friend wouldn't work as get expects a string but here the friend is an array
+soooo 
+the command is----->
+
+lrange friend 0 -1
+
+--------------------------------------------------------------------------------------------------------
+                                     SET
+set add key element
+
+1.sadd hobbies 'weight lifting'
+2. check elements
+SMEMBERS hobbies
+
+-----------------------------------------------------------------------------------------------------------------------
+
+   object add
+
+HSET objectname elementkey element value
+HGET objectname element key
+HGETALL objectname;
+
+HSET person name pintu;
+HGET person name;
+HGETALL person;
+
+HDEL person name
+HEXISTS person name
+
+
+
+
+

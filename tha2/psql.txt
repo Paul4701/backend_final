@@ -1,0 +1,55 @@
+  postgres
+
+1.enter the psql-->
+psql -U postgres
+password
+
+2. create user name with password 'password';
+
+3.create database devs;
+4. grant all privileges on database devs to username;
+5. \l -->list
+6. drop  database name;
+
+delete data base;
+
+7.  postgres=# \c devs
+You are now connected to database "devs" as user "postgres".
+devs=# create table company(
+devs(# id int not null,
+devs(# name char[50],
+devs(# age int,
+devs(# address text
+devs(# );
+CREATE TABLE
+devs=# \d
+          List of relations
+ Schema |  Name   | Type  |  Owner
+--------+---------+-------+----------
+ public | company | table | postgres
+(1 row)
+
+
+\d te joto tbale ache tader
+\d company korle specific copany table er dekhabe;
+
+devs=# \d company
+                  Table "public.company"
+ Column  |      Type      | Collation | Nullable | Default
+---------+----------------+-----------+----------+---------
+ id      | integer        |           | not null |
+ name    | character(1)[] |           |          |
+ age     | integer        |           |          |
+ address | text           |           |          |
+
+
+8. data base er vitore dhuke--->
+devs=# CREATE SCHEMA mySchema;
+devs=# CREATE table mySchema.company;
+devs=# DROP schema mySchema casecade;
+
+
+
+
+
+
