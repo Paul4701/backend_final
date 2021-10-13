@@ -1,0 +1,8 @@
+we first install express
+then mongoose 
+then we install some dev dependencies dotenv and nodemon
+
+------
+app.use(express.json())
+this middleware allows to accept the json in req.body
+
